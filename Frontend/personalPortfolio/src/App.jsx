@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import HeroSection from './sections/HeroSection';
 import AboutSection from './sections/AboutSection';
+import SkillsSection from './sections/SkillsSection';
 import './App.css';
 
 function App() {
@@ -10,11 +11,9 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <SkillsSection />
         
         {/* Temporary placeholders - will be replaced with actual sections */}
-        <section id="skills" className="section-placeholder">
-          <h2>Skills Section</h2>
-        </section>
         <section id="projects" className="section-placeholder">
           <h2>Projects Section</h2>
         </section>
