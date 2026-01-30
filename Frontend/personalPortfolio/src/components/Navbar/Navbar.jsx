@@ -23,6 +23,15 @@ const Navbar = memo(function Navbar() {
     const handleSectionScroll = () => {
       const sections = navLinks.map(link => link.id);
       
+      // Check if scrolled to bottom of page - activate last section
+      const scrolledToBottom = 
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50;
+      
+      if (scrolledToBottom) {
+        setActiveSection(sections[sections.length - 1]);
+        return;
+      }
+      
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
