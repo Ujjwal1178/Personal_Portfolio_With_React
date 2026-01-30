@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import Avatar from './components/Avatar';
 import HeroSection from './sections/HeroSection';
 import AboutSection from './sections/AboutSection';
 import SkillsSection from './sections/SkillsSection';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
+      <Avatar />
       <main>
         <HeroSection />
         <AboutSection />

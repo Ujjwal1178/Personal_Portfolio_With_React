@@ -12,34 +12,26 @@ const AboutSection = memo(function AboutSection() {
         </div>
 
         <div className={styles.content}>
-          <div className={styles.imageWrapper}>
-            <div className={styles.imagePlaceholder}>
-              <span className={styles.placeholderText}>Your Photo</span>
-            </div>
+          <div className={styles.highlights}>
+            {profile.about.highlights.map((item, index) => (
+              <div key={index} className={styles.highlightCard}>
+                <h3 className={styles.highlightValue}>{item.value}</h3>
+                <p className={styles.highlightLabel}>{item.label}</p>
+              </div>
+            ))}
           </div>
 
-          <div className={styles.info}>
-            <div className={styles.highlights}>
-              {profile.about.highlights.map((item, index) => (
-                <div key={index} className={styles.highlightCard}>
-                  <h3 className={styles.highlightValue}>{item.value}</h3>
-                  <p className={styles.highlightLabel}>{item.label}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className={styles.description}>
-              {profile.about.description.map((paragraph, index) => (
-                <p key={index} className={styles.paragraph}>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-
-            <a href="#contact" className={styles.ctaButton}>
-              Let's Talk
-            </a>
+          <div className={styles.description}>
+            {profile.about.description.map((paragraph, index) => (
+              <p key={index} className={styles.paragraph}>
+                {paragraph}
+              </p>
+            ))}
           </div>
+
+          <a href="#contact" className={styles.ctaButton}>
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
