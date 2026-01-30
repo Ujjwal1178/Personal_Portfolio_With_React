@@ -1,4 +1,18 @@
-/* App styles will go here */
+/* App styles */
 .app {
   width: 100%;
+}
+
+/* Temporary placeholder styles - remove when sections are built */
+.section-placeholder {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-placeholder h2 {
+  font-size: 2rem;
+  color: var(--text-muted);
 }

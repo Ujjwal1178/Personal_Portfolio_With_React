@@ -1,30 +1,31 @@
 import Navbar from './components/Navbar';
+import HeroSection from './sections/HeroSection';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-      
-      {/* Temporary sections for testing scroll */}
-      <section id="home" style={{ height: '100vh', paddingTop: '70px' }}>
-        <h1>Home Section</h1>
-      </section>
-      <section id="about" style={{ height: '100vh' }}>
-        <h1>About Section</h1>
-      </section>
-      <section id="skills" style={{ height: '100vh' }}>
-        <h1>Skills Section</h1>
-      </section>
-      <section id="projects" style={{ height: '100vh' }}>
-        <h1>Projects Section</h1>
-      </section>
-      <section id="experience" style={{ height: '100vh' }}>
-        <h1>Experience Section</h1>
-      </section>
-      <section id="contact" style={{ height: '100vh' }}>
-        <h1>Contact Section</h1>
-      </section>
+      <main>
+        <HeroSection />
+        
+        {/* Temporary placeholders - will be replaced with actual sections */}
+        <section id="about" className="section-placeholder">
+          <h2>About Section</h2>
+        </section>
+        <section id="skills" className="section-placeholder">
+          <h2>Skills Section</h2>
+        </section>
+        <section id="projects" className="section-placeholder">
+          <h2>Projects Section</h2>
+        </section>
+        <section id="experience" className="section-placeholder">
+          <h2>Experience Section</h2>
+        </section>
+        <section id="contact" className="section-placeholder">
+          <h2>Contact Section</h2>
+        </section>
+      </main>
     </div>
   );
 }
