@@ -12,4 +12,16 @@ export const profile = {
     linkedin: "https://linkedin.com/in/yourusername",
     twitter: "https://twitter.com/yourusername",
   },
+  about: {
+    description: [
+      "I'm a Cloud AI Automation Engineer with a passion for building intelligent systems that solve real-world problems. My expertise lies in developing conversational AI, agentic workflows, and automation solutions using cutting-edge technologies.",
+      "With hands-on experience in LangChain, LangGraph, and various LLM frameworks, I specialize in creating AI agents that can reason, plan, and execute complex tasks autonomously.",
+      "When I'm not building AI systems, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community."
+    ],
+    highlights: [
+      { label: "Experience", value: "3+ Years" },
+      { label: "Projects", value: "20+" },
+      { label: "Technologies", value: "15+" },
+    ]
+  }
 };
