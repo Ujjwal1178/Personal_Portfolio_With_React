@@ -8,9 +8,7 @@ export const profile = {
   bio: "Passionate about creating AI-powered solutions using LLMs, LangGraph, and cutting-edge automation technologies.",
   resumeUrl: "/resume.pdf",
   social: {
-    github: "https://github.com/yourusername",
     linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
   },
   about: {
     description: [
